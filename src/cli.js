@@ -4,8 +4,8 @@ const { Command } = require("commander");
 
 const {
   makeTaskCommand,
-  makeExportCommand,
-  makeImportCommand,
+  //   makeExportCommand,
+  //   makeImportCommand,
   makeConfigCommand,
 } = require("./commands");
 
@@ -24,8 +24,8 @@ async function cli() {
         "Agnus Cli Master is a minimalistic command-line todo list that increases your productivity"
       )
       .addCommand(await makeTaskCommand())
-      .addCommand(await makeExportCommand())
-      .addCommand(await makeImportCommand())
+      //   .addCommand(await makeExportCommand())
+      //   .addCommand(await makeImportCommand())
       .addCommand(await makeConfigCommand())
       .allowUnknownOption(false)
       .allowExcessArguments(false);

@@ -1,13 +1,13 @@
 {
-  "name": "@gmahota/agnus-cli",
-  "version": "1.0.0",
+  "name": "@guimaraes.mahota/agnus-cli",
+  "version": "1.0.2-alfa.03",
   "description": "Agnus Cli Master is a minimalistic command-line todo list that increases your productivity",
   "main": "src/index.js",
   "publishConfig": {
     "access": "public"
   },
   "bin": {
-    "@gmahota/agnus-cli": "./bin/agnus-cli",
+    "guimaraes.mahota/agnus-cli": "./bin/agnus-cli",
     "agnus-cli": "./bin/agnus-cli"
   },
   "scripts": {
@@ -34,10 +34,18 @@
   "author": "Guimarães Mahota <guimaraesmahota@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "commander": "^8.1.0"
+    "@inquirer/confirm": "^0.0.15-alpha.0",
+    "axios": "^0.21.1",
+    "chalk": "^4.1.2",
+    "commander": "^8.1.0",
+    "ncp": "^2.0.0"
   },
   "devDependencies": {
     "expect": "^27.0.6",
     "mocha": "^9.1.0"
-  }
+  },
+  "files": [
+    "bin/",
+    "src/"
+  ]
 }
